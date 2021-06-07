@@ -9,7 +9,7 @@ LEFT = 180
 RIGHT = 0
 
 user_color = screen.textinput(title="HI TEAM ZEUS. Choose your color",
-                              prompt="Which color have your snake(red, orange, yellow, green, blue, purple)? \n For control your snake use key: Up, Down, Right, Left. Enter a color: ")
+                              prompt="Which color have your snake(red, orange, yellow, green, blue, purple)? \n \n For control your snake use key: Up, Down, Right, Left. \n \n Enter a color: ")
 
 
 class Snake:
