@@ -1,10 +1,16 @@
-from turtle import Turtle
+from turtle import Turtle, Screen
+
+screen = Screen()
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 UP = 90
 DOWN = 270
 LEFT = 180
 RIGHT = 0
+
+user_color = screen.textinput(title="HI TEAM ZEUS. Choose your color",
+                              prompt="Which color is your snake(red, orange, yellow, green, blue, purple)? Enter a color: ")
+
 
 class Snake:
 
@@ -19,7 +25,7 @@ class Snake:
 
     def add_segment(self, position):
         new_segment = Turtle(shape="square")
-        new_segment.color("white")
+        new_segment.color(user_color)
         new_segment.penup()
         new_segment.goto(position)
         self.segments.append(new_segment)
